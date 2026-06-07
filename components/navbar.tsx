@@ -18,19 +18,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <span
-            style={{ fontFamily: "'Aref Ruqaa', serif" }}
-            className="text-2xl font-bold text-dark"
-          >
-            سابق
-          </span>
-          <span
-            style={{ fontFamily: "'Bruno Ace', sans-serif" }}
-            className="text-lg text-primary"
-          >
-            sabiq
-          </span>
+        <a
+          href="#"
+          style={{ fontFamily: "'Bruno Ace', sans-serif" }}
+          className="text-xl text-dark"
+        >
+          sabiq
         </a>
         <a
           href="#partner"

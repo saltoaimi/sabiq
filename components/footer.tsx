@@ -3,19 +3,11 @@ export default function Footer() {
     <footer className="bg-dark py-12 px-6 border-t border-stone-800">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <div className="flex items-center gap-2 justify-center md:justify-start mb-1">
-            <span
-              style={{ fontFamily: "'Aref Ruqaa', serif" }}
-              className="text-xl font-bold text-white"
-            >
-              سابق
-            </span>
-            <span
-              style={{ fontFamily: "'Bruno Ace', sans-serif" }}
-              className="text-sm text-primary"
-            >
-              sabiq
-            </span>
+          <div
+            style={{ fontFamily: "'Bruno Ace', sans-serif" }}
+            className="text-lg text-white"
+          >
+            sabiq
           </div>
           <div
             style={{ fontFamily: "'Bruno Ace', sans-serif" }}
