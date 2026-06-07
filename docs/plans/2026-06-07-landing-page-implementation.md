@@ -14,12 +14,15 @@
 
 ## Visual Identity
 
-- **Primary color:** Deep teal `#0D9488` — trust + innovation
-- **Accent color:** Electric lime `#84CC16` — bold, disruptive energy
-- **Dark:** `#0F172A` (slate-900)
-- **Light/background:** `#F8FAFC` (slate-50)
-- **Font:** Inter (clean, modern, widely available)
-- **Logo:** Text-based "Sabiq" wordmark for now (no graphic logo needed at pre-launch)
+- **Primary color:** Rose `#E11D48` — bold, warm, disruptive
+- **Accent color:** Amber `#FB923C` — warmth and optimism
+- **Dark:** `#1C1917` (stone-900)
+- **Light/background:** `#FAFAF9` (stone-50)
+- **Arabic font:** Aref Ruqaa (خط رقعة) — calligraphic warmth, Saudi heritage
+- **English font:** Bruno Ace (lowercase) — futuristic, techy, rounded
+- **Body font:** system-ui / sans-serif
+- **Logo:** Bilingual wordmark — سابق (Aref Ruqaa) + sabiq (Bruno Ace lowercase)
+- **Style:** All English text in lowercase. Light background theme.
 
 ---
 

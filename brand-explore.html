@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabiq — Logo: Ruqaa vs Changa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Changa:wght@700;800&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi+Fun:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #050508; color: #fff; font-family: system-ui, sans-serif; padding: 40px; }
+
+    h1 { font-size: 2rem; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 60px; font-size: 1rem; }
+
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #444;
+      margin-bottom: 32px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #181818;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+
+    .logo-card {
+      background: #0a0a0f;
+      border: 1px solid #1a1a2e;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .logo-card:hover {
+      border-color: #333;
+      box-shadow: 0 0 40px rgba(225, 29, 72, 0.05);
+    }
+
+    .logo-display {
+      padding: 56px 32px;
+      text-align: center;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .logo-display::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    .logo-display .ar {
+      line-height: 1.3;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .logo-display .en {
+      line-height: 1.2;
+      position: relative;
+      z-index: 1;
+      font-family: 'Bruno Ace', sans-serif;
+    }
+    .logo-display .tagline {
+      font-size: 0.65rem;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-top: 16px;
+      opacity: 0.4;
+      font-family: system-ui;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glow-subtle { text-shadow: 0 0 20px currentColor; }
+
+    .logo-info {
+      padding: 14px 24px;
+      background: #08080d;
+      border-top: 1px solid #151520;
+    }
+    .logo-info .name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+      color: #ccc;
+    }
+    .logo-info .desc {
+      font-size: 0.72rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .with-divider {
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+    }
+    .divider-line {
+      width: 1px;
+      height: 44px;
+      opacity: 0.3;
+    }
+
+    .full-width { grid-column: 1 / -1; }
+
+    .vs-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sabiq — Ruqaa vs Changa</h1>
+  <p class="subtitle">Aref Ruqaa (خط رقعة) paired with Bruno Ace lowercase. Side-by-side comparison.</p>
+
+  <!-- SIDE BY SIDE: RUQAA vs CHANGA — STACKED -->
+  <div class="section-title">Stacked — Ruqaa (Left) vs Changa (Right)</div>
+  <div class="logo-grid">
+
+    <!-- Rose: Ruqaa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #E11D4815, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #E11D48;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Rose</div>
+        <div class="desc">Calligraphic warmth meets futuristic English. Contrast between tradition and tech creates tension and memorability.</div>
+      </div>
+    </div>
+
+    <!-- Rose: Changa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #E11D4815, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #E11D48;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Rose</div>
+        <div class="desc">Consistent tech voice across both scripts. Unified, modern, no friction between Arabic and English.</div>
+      </div>
+    </div>
+
+    <!-- Teal: Ruqaa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #0D948815, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #0D9488; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #0D9488;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Teal</div>
+      </div>
+    </div>
+
+    <!-- Teal: Changa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #0D948815, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #0D9488; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #0D9488;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Teal</div>
+      </div>
+    </div>
+
+    <!-- Indigo: Ruqaa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #6366F115, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #818CF8; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #818CF8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Indigo</div>
+      </div>
+    </div>
+
+    <!-- Indigo: Changa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #6366F115, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #818CF8; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #818CF8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Indigo</div>
+      </div>
+    </div>
+
+    <!-- Emerald: Ruqaa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #10B98115, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #10B981; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #10B981;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Emerald</div>
+      </div>
+    </div>
+
+    <!-- Emerald: Changa -->
+    <div class="logo-card">
+      <div class="logo-display" style="background: radial-gradient(ellipse at center, #10B98115, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #fff;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 2.4rem; color: #10B981; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #10B981;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Emerald</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INLINE WITH DIVIDER -->
+  <div class="section-title">Inline — Ruqaa (Top Row) vs Changa (Bottom Row)</div>
+  <div class="logo-grid">
+
+    <div class="logo-card">
+      <div class="logo-display with-divider" style="background: radial-gradient(ellipse at center, #E11D4818, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 3.2rem; color: #fff;">سابق</div>
+        <div class="divider-line" style="background: #E11D48;"></div>
+        <div class="en glow-subtle" style="font-size: 2.2rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Rose Inline</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display with-divider" style="background: radial-gradient(ellipse at center, #6366F118, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 3.2rem; color: #fff;">سابق</div>
+        <div class="divider-line" style="background: #818CF8;"></div>
+        <div class="en glow-subtle" style="font-size: 2.2rem; color: #818CF8; letter-spacing: 3px;">sabiq</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Indigo Inline</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display with-divider" style="background: radial-gradient(ellipse at center, #E11D4818, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 2.8rem; color: #fff;">سابق</div>
+        <div class="divider-line" style="background: #E11D48;"></div>
+        <div class="en glow-subtle" style="font-size: 2.2rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Rose Inline</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display with-divider" style="background: radial-gradient(ellipse at center, #6366F118, transparent 60%), #08080f;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 2.8rem; color: #fff;">سابق</div>
+        <div class="divider-line" style="background: #818CF8;"></div>
+        <div class="en glow-subtle" style="font-size: 2.2rem; color: #818CF8; letter-spacing: 3px;">sabiq</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Indigo Inline</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ON LIGHT -->
+  <div class="section-title">Light Background — Ruqaa vs Changa</div>
+  <div class="logo-grid">
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: #F8FAFC;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #0F172A;">سابق</div>
+        <div class="en" style="font-size: 2.4rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #94A3B8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Light Rose</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: #F8FAFC;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #0F172A;">سابق</div>
+        <div class="en" style="font-size: 2.4rem; color: #E11D48; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #94A3B8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Light Rose</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: #F8FAFC;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 4rem; color: #0F172A;">سابق</div>
+        <div class="en" style="font-size: 2.4rem; color: #6366F1; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #94A3B8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Ruqaa — Light Indigo</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: #F8FAFC;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 3.4rem; color: #0F172A;">سابق</div>
+        <div class="en" style="font-size: 2.4rem; color: #6366F1; letter-spacing: 3px;">sabiq</div>
+        <div class="tagline" style="color: #94A3B8;">Driving Saudi Forward</div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Changa — Light Indigo</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HERO MOCKUPS SIDE BY SIDE -->
+  <div class="section-title">Hero Mockup — Ruqaa vs Changa</div>
+  <div class="logo-grid">
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: linear-gradient(135deg, #0F172A, #E11D4820 80%); padding: 80px 32px; min-height: 420px;">
+        <div class="ar" style="font-family: 'Aref Ruqaa'; font-weight: 700; font-size: 1.8rem; color: #fff; margin-bottom: 4px;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 1.2rem; color: #E11D48; letter-spacing: 3px; margin-bottom: 40px;">sabiq</div>
+        <div style="position: relative; z-index: 1;">
+          <h2 style="font-family: 'Bruno Ace'; font-size: 2.6rem; color: #fff; margin-bottom: 14px; letter-spacing: 1px;">driving saudi forward</h2>
+          <p style="font-family: system-ui; font-size: 0.95rem; color: #94A3B8; max-width: 400px; margin: 0 auto 28px; line-height: 1.7;">Digital auto financing and lease-to-own — fast approvals, alternative credit scoring, up to 60K SAR.</p>
+          <a href="#" style="display: inline-block; background: #E11D48; color: #fff; padding: 12px 28px; border-radius: 10px; font-family: 'Bruno Ace'; font-size: 0.9rem; text-decoration: none; letter-spacing: 2px;">partner with us</a>
+        </div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Hero — Ruqaa + Rose</div>
+        <div class="desc">Traditional calligraphy grounds the brand in Saudi identity. The contrast with Bruno Ace says "rooted in heritage, building the future."</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-display" style="background: linear-gradient(135deg, #0F172A, #E11D4820 80%); padding: 80px 32px; min-height: 420px;">
+        <div class="ar" style="font-family: 'Changa'; font-weight: 800; font-size: 1.6rem; color: #fff; margin-bottom: 4px;">سابق</div>
+        <div class="en glow-subtle" style="font-size: 1.2rem; color: #E11D48; letter-spacing: 3px; margin-bottom: 40px;">sabiq</div>
+        <div style="position: relative; z-index: 1;">
+          <h2 style="font-family: 'Bruno Ace'; font-size: 2.6rem; color: #fff; margin-bottom: 14px; letter-spacing: 1px;">driving saudi forward</h2>
+          <p style="font-family: system-ui; font-size: 0.95rem; color: #94A3B8; max-width: 400px; margin: 0 auto 28px; line-height: 1.7;">Digital auto financing and lease-to-own — fast approvals, alternative credit scoring, up to 60K SAR.</p>
+          <a href="#" style="display: inline-block; background: #E11D48; color: #fff; padding: 12px 28px; border-radius: 10px; font-family: 'Bruno Ace'; font-size: 0.9rem; text-decoration: none; letter-spacing: 2px;">partner with us</a>
+        </div>
+      </div>
+      <div class="logo-info">
+        <div class="name">Hero — Changa + Rose</div>
+        <div class="desc">Fully unified tech aesthetic. Both scripts speak the same visual language. Pure forward-looking energy.</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
