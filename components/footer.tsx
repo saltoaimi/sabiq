@@ -1,6 +1,6 @@
 "use client";
 
-import { useLang, t } from "@/lib/i18n";
+import { useLang, t, logoFont, headingFont } from "@/lib/i18n";
 
 export default function Footer() {
   const { lang } = useLang();
@@ -11,13 +11,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-start">
           <div
-            style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
-            className="text-lg text-white mb-1"
+            style={{ fontFamily: logoFont(lang) }}
+            className={`text-lg text-white mb-1 ${lang === "ar" ? "text-xl font-bold" : ""}`}
           >
             {lang === "ar" ? "سابق" : "sabiq"}
           </div>
           <div
-            style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
+            style={{ fontFamily: headingFont(lang) }}
             className="text-xs text-stone-400"
           >
             {s.tagline}
@@ -45,7 +45,10 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="text-center md:text-end text-sm text-stone-500">
+        <div
+          style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+          className="text-center md:text-end text-sm text-stone-500"
+        >
           <p>{s.samaNote}</p>
           <p className="mt-1">&copy; {new Date().getFullYear()} {s.copyright}</p>
         </div>

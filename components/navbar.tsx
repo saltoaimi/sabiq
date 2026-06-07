@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useLang, t } from "@/lib/i18n";
+import { useLang, t, logoFont, headingFont } from "@/lib/i18n";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
+          style={{ fontFamily: logoFont(lang) }}
           className={`text-dark ${lang === "ar" ? "text-2xl font-bold" : "text-xl"}`}
         >
           {lang === "ar" ? "سابق" : "sabiq"}
@@ -32,14 +32,14 @@ export default function Navbar() {
           <button
             onClick={toggle}
             className="text-sm text-dark/60 hover:text-dark transition-colors px-3 py-1.5"
-            style={{ fontFamily: lang === "ar" ? "'Bruno Ace', sans-serif" : "'Aref Ruqaa', serif" }}
+            style={{ fontFamily: lang === "ar" ? "'Bruno Ace', sans-serif" : "'Tajawal', sans-serif" }}
           >
             {lang === "ar" ? "EN" : "عربي"}
           </button>
           <a
             href="#partner"
-            style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
-            className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-lg text-sm transition-colors"
+            style={{ fontFamily: headingFont(lang) }}
+            className={`bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-lg text-sm transition-colors ${lang === "ar" ? "font-bold" : ""}`}
           >
             {s.partnerCta}
           </a>

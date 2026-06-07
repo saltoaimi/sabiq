@@ -1,6 +1,6 @@
 "use client";
 
-import { useLang, t } from "@/lib/i18n";
+import { useLang, t, headingFont } from "@/lib/i18n";
 
 export default function Hero() {
   const { lang } = useLang();
@@ -17,20 +17,23 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1
-          style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
-          className="text-5xl md:text-7xl text-white mb-6 leading-tight"
+          style={{ fontFamily: headingFont(lang) }}
+          className={`text-5xl md:text-7xl text-white mb-6 leading-tight ${lang === "ar" ? "font-extrabold" : ""}`}
         >
           {titleParts[0]}
           <span className="text-primary">{s.heroHighlight}</span>
           {titleParts[1] || ""}
         </h1>
-        <p className="text-lg md:text-xl text-stone-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p
+          style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+          className="text-lg md:text-xl text-stone-400 mb-10 max-w-2xl mx-auto leading-relaxed"
+        >
           {s.heroSub}
         </p>
         <a
           href="#partner"
-          style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
-          className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg transition-colors"
+          style={{ fontFamily: headingFont(lang) }}
+          className={`inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg transition-colors ${lang === "ar" ? "font-bold" : ""}`}
         >
           {s.heroCta}
         </a>

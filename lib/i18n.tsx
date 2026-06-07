@@ -26,6 +26,16 @@ export function useLang() {
   return useContext(LangContext);
 }
 
+// Font helpers — Aref Ruqaa is ONLY for the logo
+export const logoFont = (lang: Lang) =>
+  lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif";
+
+export const headingFont = (lang: Lang) =>
+  lang === "ar" ? "'Tajawal', sans-serif" : "'Bruno Ace', sans-serif";
+
+export const bodyFont = (lang: Lang) =>
+  lang === "ar" ? "'Tajawal', sans-serif" : "system-ui, sans-serif";
+
 export const t = {
   en: {
     // Navbar
@@ -85,8 +95,8 @@ export const t = {
     partnerCta: "انضم كشريك",
 
     // Hero
-    heroTitle: "نقود السعودية للأمام",
-    heroHighlight: "للأمام",
+    heroTitle: "يالله نشتري سياره",
+    heroHighlight: "سياره",
     heroSub:
       "تمويل سيارات فوري عند نقطة البيع. طلبات رقمية، موافقات سريعة، بدون أي ورق.",
     heroCta: "انضم كشريك",
@@ -129,7 +139,7 @@ export const t = {
     thankYouSub: "توقع ردنا خلال ٢٤ ساعة.",
 
     // Footer
-    tagline: "نقود السعودية للأمام",
+    tagline: "يالله نشتري سياره",
     samaNote: "سابق في مرحلة الترخيص مع البنك المركزي السعودي (ساما)",
     copyright: "سابق. جميع الحقوق محفوظة.",
   },

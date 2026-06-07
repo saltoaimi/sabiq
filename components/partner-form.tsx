@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
-import { useLang, t } from "@/lib/i18n";
+import { useLang, t, headingFont } from "@/lib/i18n";
 
 export default function PartnerForm() {
   const [submitted, setSubmitted] = useState(false);
   const { lang } = useLang();
   const s = t[lang];
-  const font = lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif";
+  const font = headingFont(lang);
 
   if (submitted) {
     return (
@@ -16,11 +16,16 @@ export default function PartnerForm() {
         <div className="max-w-2xl mx-auto text-center">
           <h2
             style={{ fontFamily: font }}
-            className="text-3xl md:text-4xl text-dark mb-4"
+            className={`text-3xl md:text-4xl text-dark mb-4 ${lang === "ar" ? "font-bold" : ""}`}
           >
             {s.thankYouTitle}
           </h2>
-          <p className="text-stone-500">{s.thankYouSub}</p>
+          <p
+            style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+            className="text-stone-500"
+          >
+            {s.thankYouSub}
+          </p>
         </div>
       </section>
     );
@@ -31,11 +36,14 @@ export default function PartnerForm() {
       <div className="max-w-2xl mx-auto">
         <h2
           style={{ fontFamily: font }}
-          className="text-3xl md:text-4xl text-dark text-center mb-4"
+          className={`text-3xl md:text-4xl text-dark text-center mb-4 ${lang === "ar" ? "font-bold" : ""}`}
         >
           {s.partnerTitle}
         </h2>
-        <p className="text-stone-500 text-center mb-12 max-w-lg mx-auto">
+        <p
+          style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+          className="text-stone-500 text-center mb-12 max-w-lg mx-auto"
+        >
           {s.partnerSub}
         </p>
         <form
@@ -94,7 +102,7 @@ export default function PartnerForm() {
           <button
             type="submit"
             style={{ fontFamily: font }}
-            className="w-full bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
+            className={`w-full bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg transition-colors flex items-center justify-center gap-2 ${lang === "ar" ? "font-bold" : ""}`}
           >
             {s.formSend} <Send className="w-5 h-5" />
           </button>

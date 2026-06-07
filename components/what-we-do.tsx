@@ -1,12 +1,12 @@
 "use client";
 
 import { Car, KeyRound, Workflow } from "lucide-react";
-import { useLang, t } from "@/lib/i18n";
+import { useLang, t, headingFont } from "@/lib/i18n";
 
 export default function WhatWeDo() {
   const { lang } = useLang();
   const s = t[lang];
-  const font = lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif";
+  const font = headingFont(lang);
 
   const offerings = [
     { icon: Car, title: s.card1Title, description: s.card1Desc },
@@ -19,11 +19,14 @@ export default function WhatWeDo() {
       <div className="max-w-6xl mx-auto">
         <h2
           style={{ fontFamily: font }}
-          className="text-3xl md:text-4xl text-dark text-center mb-4"
+          className={`text-3xl md:text-4xl text-dark text-center mb-4 ${lang === "ar" ? "font-bold" : ""}`}
         >
           {s.whatWeDoTitle}
         </h2>
-        <p className="text-stone-500 text-center mb-16 max-w-xl mx-auto">
+        <p
+          style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+          className="text-stone-500 text-center mb-16 max-w-xl mx-auto"
+        >
           {s.whatWeDoSub}
         </p>
         <div className="grid md:grid-cols-3 gap-8">
@@ -37,11 +40,14 @@ export default function WhatWeDo() {
               </div>
               <h3
                 style={{ fontFamily: font }}
-                className="text-xl text-dark mb-3"
+                className={`text-xl text-dark mb-3 ${lang === "ar" ? "font-bold" : ""}`}
               >
                 {item.title}
               </h3>
-              <p className="text-stone-500 leading-relaxed">
+              <p
+                style={{ fontFamily: lang === "ar" ? "'Tajawal', sans-serif" : undefined }}
+                className="text-stone-500 leading-relaxed"
+              >
                 {item.description}
               </p>
             </div>
