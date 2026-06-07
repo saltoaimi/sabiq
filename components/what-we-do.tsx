@@ -1,39 +1,30 @@
-import { Car, KeyRound, Zap } from "lucide-react";
+"use client";
 
-const offerings = [
-  {
-    icon: Car,
-    title: "auto finance",
-    description:
-      "quick, fully digital vehicle financing up to 60K SAR. no branches, no paperwork — just speed.",
-  },
-  {
-    icon: KeyRound,
-    title: "lease to own",
-    description:
-      "flexible lease-to-own plans that put consumers in the driver's seat from day one.",
-  },
-  {
-    icon: Zap,
-    title: "alternative scoring",
-    description:
-      "digital credit scoring that sees what traditional models miss. more approvals, faster decisions.",
-  },
-];
+import { Car, KeyRound, Workflow } from "lucide-react";
+import { useLang, t } from "@/lib/i18n";
 
 export default function WhatWeDo() {
+  const { lang } = useLang();
+  const s = t[lang];
+  const font = lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif";
+
+  const offerings = [
+    { icon: Car, title: s.card1Title, description: s.card1Desc },
+    { icon: KeyRound, title: s.card2Title, description: s.card2Desc },
+    { icon: Workflow, title: s.card3Title, description: s.card3Desc },
+  ];
+
   return (
     <section className="py-24 px-6 bg-light">
       <div className="max-w-6xl mx-auto">
         <h2
-          style={{ fontFamily: "'Bruno Ace', sans-serif" }}
+          style={{ fontFamily: font }}
           className="text-3xl md:text-4xl text-dark text-center mb-4"
         >
-          what we do
+          {s.whatWeDoTitle}
         </h2>
         <p className="text-stone-500 text-center mb-16 max-w-xl mx-auto">
-          three ways we're making auto finance faster and more accessible in
-          saudi arabia.
+          {s.whatWeDoSub}
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {offerings.map((item) => (
@@ -45,7 +36,7 @@ export default function WhatWeDo() {
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <h3
-                style={{ fontFamily: "'Bruno Ace', sans-serif" }}
+                style={{ fontFamily: font }}
                 className="text-xl text-dark mb-3"
               >
                 {item.title}

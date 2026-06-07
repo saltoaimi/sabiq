@@ -1,19 +1,26 @@
+"use client";
+
+import { useLang, t } from "@/lib/i18n";
+
 export default function Footer() {
+  const { lang } = useLang();
+  const s = t[lang];
+
   return (
     <footer className="bg-dark py-12 px-6 border-t border-stone-800">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-start">
           <div
-            style={{ fontFamily: "'Bruno Ace', sans-serif" }}
-            className="text-lg text-white"
+            style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
+            className="text-lg text-white mb-1"
           >
-            sabiq
+            {lang === "ar" ? "سابق" : "sabiq"}
           </div>
           <div
-            style={{ fontFamily: "'Bruno Ace', sans-serif" }}
+            style={{ fontFamily: lang === "ar" ? "'Aref Ruqaa', serif" : "'Bruno Ace', sans-serif" }}
             className="text-xs text-stone-400"
           >
-            driving saudi forward
+            {s.tagline}
           </div>
         </div>
 
@@ -38,9 +45,9 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="text-center md:text-right text-sm text-stone-500">
-          <p>sabiq is currently in the licensing stage with SAMA</p>
-          <p className="mt-1">&copy; {new Date().getFullYear()} sabiq. all rights reserved.</p>
+        <div className="text-center md:text-end text-sm text-stone-500">
+          <p>{s.samaNote}</p>
+          <p className="mt-1">&copy; {new Date().getFullYear()} {s.copyright}</p>
         </div>
       </div>
     </footer>

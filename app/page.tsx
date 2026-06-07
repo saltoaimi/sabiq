@@ -1,3 +1,6 @@
+"use client";
+
+import { LangProvider } from "@/lib/i18n";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import WhatWeDo from "@/components/what-we-do";
@@ -7,13 +10,15 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <WhatWeDo />
-      <HowItWorks />
-      <PartnerForm />
-      <Footer />
-    </main>
+    <LangProvider>
+      <main>
+        <Navbar />
+        <Hero />
+        <WhatWeDo />
+        <HowItWorks />
+        <PartnerForm />
+        <Footer />
+      </main>
+    </LangProvider>
   );
 }

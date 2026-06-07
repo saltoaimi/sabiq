@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "sabiq — driving saudi forward",
   description:
-    "digital auto financing and lease-to-own powered by alternative credit scoring. up to 60K SAR.",
+    "instant auto financing at the point of sale. digital applications, fast approvals, zero paperwork.",
 };
 
 export default function RootLayout({
